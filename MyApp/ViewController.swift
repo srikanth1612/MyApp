@@ -7,19 +7,41 @@
 
 import UIKit
 
+
+class chcekingNumber {
+    
+    
+    func checkingNumber(check:Bool) -> Bool {
+        
+        if check {
+            return true
+        }
+        return false
+        
+    }
+}
+
+
 class ViewController: UIViewController {
 
+    var number  = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        number += 1
         // Do any additional setup after loading the view.
     }
 
-    // cehcking CI in main branch after ci removed in CI branch
-    
-    //changed in CI Branch
-    //testing conflit
-    
-    //crating a new git project from xcode 
 
+    func checkingNumber() -> Bool{
+        
+        if number == 1 {
+            return true
+        }
+        return false
+    }
+    
+    
+    
 }
 
